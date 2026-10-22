@@ -1,5 +1,7 @@
 package cards;
 
-public interface Card {
-    boolean snap(Card otherCard);
+public class Card {
+    public boolean snap(Card otherCard) {
+        return false;
+    }
 }

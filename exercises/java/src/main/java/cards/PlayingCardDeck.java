@@ -1,11 +1,8 @@
 package cards;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
-public class PlayingCardDeck implements Deck {
-    List<PlayingCard> cards;
+public class PlayingCardDeck extends Deck {
 
     PlayingCardDeck() {
         this.cards = new ArrayList<>();
@@ -18,25 +15,5 @@ public class PlayingCardDeck implements Deck {
     @Override
     public String toString() {
         return this.cards.toString();
-    }
-
-    @Override
-    public void shuffle() {
-        Collections.shuffle(this.cards);
-    }
-
-    @Override
-    public Card deal() {
-        return this.cards.remove(0);
-    }
-
-    @Override
-    public String[] getCards() {
-        String[] result = new String[cards.size()];
-        for (int i = 0; i < cards.size(); i++) {
-            PlayingCard card = cards.get(i);
-            result[i] = card.toString();
-        }
-        return result;
     }
 }

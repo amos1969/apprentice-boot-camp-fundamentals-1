@@ -9,13 +9,13 @@ public class Cards {
 //        }
     }
 
-//    public String[] getCards() {
-//        String[] result = new String[52];
+    public String[] getCards() {
+        String[] result = new String[52];
 //        PlayingCardDeck deck = new PlayingCardDeck();
 //        for (int i = 0; i < 52; i++) {
 //            result[i] = deck.cards[i].toString();
 //        }
 //
-//        return result;
-//    }
+        return result;
+    }
 }
