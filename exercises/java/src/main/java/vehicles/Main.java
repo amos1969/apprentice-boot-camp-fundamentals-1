@@ -11,5 +11,8 @@ public class Main {
         Car porsche = new Car(10000.0, 3);
         System.out.println("Porsche price is: " + porsche.getPrice());
         System.out.println("It has " + porsche.getNumberOfDoors());
+
+        Scooter scooter = new Scooter(100.0);
+        System.out.println("Discounted Scooter price: " + scooter.getPrice());
     }
 }
