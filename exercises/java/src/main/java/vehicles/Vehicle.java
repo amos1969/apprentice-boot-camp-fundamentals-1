@@ -1,13 +1,8 @@
 package vehicles;
 
 public class Vehicle {
-    private double price;
 
-    public Vehicle(double price) {
-        this.price = price;
-    }
-
-    public double getPrice() {
-        return this.price;
+    public String getMovementMethod() {
+        return "You shouldn't ever see this.";
     }
 }
