@@ -1,6 +1,6 @@
 package cards;
 
-public class PlayingCard {
+public class PlayingCard implements Card {
     Suit suit;
     int faceValue;
 
@@ -23,5 +23,9 @@ public class PlayingCard {
         return face + " of " + suit;
     }
 
+    @Override
+    public boolean snap(Card otherCard) {
+        return otherCard != null && this.toString().split(" ")[0].equals(otherCard.toString().split(" ")[0]);
+    }
 
 }
